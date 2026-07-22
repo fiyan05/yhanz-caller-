@@ -4,68 +4,216 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YHANZ TOPUP</title>
+
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
-text-align:center;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
+
+body{
+background:#111827;
+color:white;
+}
+
 header{
 background:#2563eb;
 padding:20px;
+text-align:center;
 font-size:30px;
 font-weight:bold;
 }
-.card{
-background:#1e293b;
+
+.banner{
 margin:20px;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.banner h2{
+font-size:28px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:#1f2937;
 padding:20px;
 border-radius:15px;
+margin-bottom:20px;
 }
+
+input,select{
+width:100%;
+padding:15px;
+margin-top:10px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+.game-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:15px;
+}
+
+.game{
+background:#374151;
+padding:20px;
+border-radius:12px;
+text-align:center;
+font-size:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+.game:hover{
+background:#2563eb;
+}
+
+.dm-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.dm{
+background:#374151;
+padding:15px;
+border-radius:10px;
+text-align:center;
+cursor:pointer;
+}
+
+.dm:hover{
+background:#22c55e;
+}
+
 button{
+width:100%;
+padding:18px;
 background:#22c55e;
 color:white;
+font-size:20px;
 border:none;
-padding:15px 30px;
-border-radius:10px;
-font-size:18px;
+border-radius:12px;
+cursor:pointer;
+margin-top:20px;
 }
-input{
-padding:12px;
-width:80%;
-margin:10px;
-border-radius:8px;
-border:none;
+
+button:hover{
+background:#16a34a;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>🎮 YHANZ TOPUP</header>
+<header>
+🎮 YHANZ TOPUP
+</header>
+
+<div class="banner">
+<h2>Top Up Game Murah & Cepat</h2>
+<p>24 Jam Proses Otomatis</p>
+</div>
+
+<div class="container">
 
 <div class="card">
-<h2>Top Up Game</h2>
 
-<input placeholder="Masukkan ID Game">
+<h2>Masukkan ID Game</h2>
 
-<br>
-
-<select style="padding:12px;width:85%;">
-<option>Free Fire</option>
-<option>Mobile Legends</option>
-<option>PUBG</option>
-<option>Honor of Kings</option>
-<option>Valorant</option>
-</select>
-
-<br><br>
-
-<button>TOP UP</button>
+<input type="text" placeholder="Contoh : 12345678">
 
 </div>
 
+<div class="card">
+
+<h2>Pilih Game</h2>
+
+<div class="game-grid">
+
+<div class="game">🔥 Free Fire</div>
+
+<div class="game">⚔ Mobile Legends</div>
+
+<div class="game">🎯 PUBG</div>
+
+<div class="game">🎮 Honor of Kings</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Pilih Diamond</h2>
+
+<div class="dm-grid">
+
+<div class="dm">5 DM</div>
+
+<div class="dm">12 DM</div>
+
+<div class="dm">50 DM</div>
+
+<div class="dm">70 DM</div>
+
+<div class="dm">140 DM</div>
+
+<div class="dm">355 DM</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Metode Pembayaran</h2>
+
+<select>
+
+<option>DANA</option>
+
+<option>OVO</option>
+
+<option>GoPay</option>
+
+<option>QRIS</option>
+
+<option>Bank Transfer</option>
+
+</select>
+
+<button onclick="pesan()">
+TOP UP SEKARANG
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function pesan(){
+
+alert("Terima kasih telah melakukan pemesanan di YHANZ TOPUP.");
+
+}
+
+</script>
+
 </body>
-</html>
+  </html>

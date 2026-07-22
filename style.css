@@ -1,1 +1,100 @@
 
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    background:#111827;
+    padding:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid #2563eb;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+.banner{
+    padding:60px 20px;
+    text-align:center;
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+}
+
+.banner h1{
+    font-size:40px;
+}
+
+.banner p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.game-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.game-card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.game-card:hover{
+    transform:translateY(-5px);
+    background:#2563eb;
+}
+
+.game-card img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.game-card h3{
+    margin-top:15px;
+}
+
+button{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#16a34a;
+}
